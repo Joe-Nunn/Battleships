@@ -20,6 +20,8 @@ public class BattleshipsGame
     public BattleshipsGame(DifficultyLevel difficulty) {
         playerGrid = new Grid();
         opponentGrid = new Grid();
+        playerShips = new ArrayList<>();
+        opponentShips = new ArrayList<>();
         createOpponent(difficulty);
         shipsPlaced = false;
         GameStatus gameStatus = GameStatus.ONGOING;
@@ -87,7 +89,7 @@ public class BattleshipsGame
      */
     private boolean newShipValid(ShipType shipType) {
         boolean valid = true;
-        if (playerShips.size() <= 5){
+        if (playerShips.size() >= 5){
             valid = false;
         } else {
             if (shipType == null) {
@@ -95,7 +97,7 @@ public class BattleshipsGame
             } else {
                 int i = 0;
                 while (i < playerShips.size() && valid) {
-                    if (playerShips.get(i).equals(shipType)) {
+                    if (playerShips.get(i).getType().equals(shipType)) {
                         valid = false;
                     }
                 }
