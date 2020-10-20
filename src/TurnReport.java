@@ -1,5 +1,5 @@
 /**
- * Holds the information from both the player's targetting attempt and the opponents
+ * Holds the information from both the player's targeting attempt and the opponents
  *
  * @author Joe Nunn
  * @version 20/10/2020
