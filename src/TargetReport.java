@@ -1,5 +1,5 @@
 /**
- * Holds information from a targetting action
+ * Holds information from a targeting action
  *
  * @author Joe Nunn
  * @version 20/10/2020
