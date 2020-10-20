@@ -25,7 +25,7 @@ public enum Direction{
     },
     RIGHT("Right"){
         @Override Coordinate move(Coordinate coordinate){
-            coordinate.setY(coordinate.getY() +1 );
+            coordinate.setY(coordinate.getY() + 1);
             return coordinate;
         }
     };
